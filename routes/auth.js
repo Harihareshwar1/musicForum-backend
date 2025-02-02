@@ -125,7 +125,7 @@ router.post('/google-login', async (req, res) => {
         
         if (!user) {
             // Create new user
-            const username = email.split('@')[0] + Math.random().toString(36).substring(7);
+            const username = name;
             user = new User({
                 username,
                 email,
